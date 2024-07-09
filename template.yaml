@@ -6,12 +6,13 @@ metadata:
   description: An example template that creates a BigQuery DataSet
   tags:
     - backstage
+    - bigquery
 spec:
   owner: user:guest
   type: service
 
   parameters:
-    - title: Create Cloud Run Service
+    - title: Create a BigQuery DataSet
       required:
         - project_id
         - dataset_name
