@@ -21,7 +21,7 @@ spec:
         project_id:
           title: Project Name
           type: string
-          description: Name of the Project to deploy the Cloud Run
+          description: Name of the Project to deploy
         dataset_name:
           title: DataSet name
           type: string
@@ -50,7 +50,7 @@ spec:
         url: ./skeleton
         values:
           project_id: ${{ parameters.project_id }}
-          cloudrun_name: ${{ parameters.dataset_name }}
+          dataset_name: ${{ parameters.dataset_name }}
           region: ${{ parameters.region }}
 
     - id: publish
