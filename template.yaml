@@ -48,8 +48,6 @@ spec:
       action: fetch:template
       input:
         url: ./skeleton
-        copyWithoutRender:
-          - .github/workflows/*
         values:
           project_id: ${{ parameters.project_id }}
           cloudrun_name: ${{ parameters.dataset_name }}
